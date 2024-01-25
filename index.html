@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Josefin+Sans:wght@100..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../src/output.css" rel="stylesheet">
+
+    <title>ESPRO Homepage</title>
+</head>
+
+<body>
+    <main class="">
+        <header class="flex flex-col w-full ">
+            <div class="flex justify-center items-center w-full h-9 bg-[#8DB9CA]">
+                <p class="text-white text-[11px] tracking-widest leading-[13px] font-josefin font-bold">
+                    FREE SHIPPING ON ALL U.S. ORDERS $49+
+                </p>
+            </div>
+            <nav class="flex w-full gap-4 px-20 h-[66px] z-50 bg-white" id="nav">
+                <div class="flex-1 font-josefin text-xs">
+                    <div class="flex h-full items-center gap-14 text-[#221F20]">
+                        <a href="#" id="navDropdown"
+                            class="flex gap-1 text-[13px] font-josefin font-bold tracking-widest">SHOP
+                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5"
+                                class="self-center" id="vDropdown">
+                                <path id="arrow-ios-downward-fill"
+                                    d="M11.991,18.5a.6.6,0,0,1-.411-.164l-3.85-3.57a.771.771,0,0,1-.083-1.007.6.6,0,0,1,.9-.093l3.44,3.2,3.44-3.084a.6.6,0,0,1,.472-.156.627.627,0,0,1,.432.263.767.767,0,0,1,.16.543.737.737,0,0,1-.249.5L12.4,18.375A.594.594,0,0,1,11.991,18.5Z"
+                                    transform="translate(-7.498 -13.498)" fill="#221f20" opacity="0.5" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-[13px] font-josefin font-bold tracking-widest">OUR STORY</a>
+                    </div>
+                </div>
+
+                <!-- DROPDOWN -->
+
+                <div class="hidden absolute left-0 top-[102px] w-full h-[360px] px-20 bg-white z-20" id="dropdown">
+                    <div class="flex flex-1 items-center gap-44 font-barlow font-bold text-[#221F20]">
+                        <a href="#" class="group flex flex-col items-center justify-between w-48 h-[293px]">
+                            <img src="./images/img1 dropdown.png" alt="image">
+                            <p class=" text-[26px] leading-[31px] relative">
+                                FRENCH PRESS
+                                <span
+                                    class="absolute bottom-0 left-0 w-full h-[2px] bg-[#221F20] transform scale-x-0 transition-transform group-hover:scale-x-100"></span>
+                            </p>
+                        </a>
+
+                        <a href="#" class="group flex flex-col items-center justify-between w-48 h-[293px]">
+                            <img src="./images/img2 dropdown.png" alt="image">
+                            <p class=" text-[26px] leading-[31px] relative">
+                                TRAVEL PRESS
+                                <span
+                                    class="absolute bottom-0 left-0 w-full h-[2px] bg-[#221F20] transform scale-x-0 transition-transform group-hover:scale-x-100"></span>
+                            </p>
+                        </a>
+
+                        <a href="#" class="group flex flex-col items-center justify-between w-48 h-[293px]">
+                            <img src="./images/img3 dropdown.png" alt="image">
+                            <p class="text-[26px] leading-[31px] relative">
+                                POUR OVER
+                                <span
+                                    class="absolute bottom-0 left-0 w-full h-[2px] bg-[#221F20] transform scale-x-0 transition-transform group-hover:scale-x-100"></span>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center basis-[440px] pl-20">
+                        <div class="flex flex-col text-[#221F20]">
+                            <p class="font-josefin text-xs tracking-wider">
+                                OTHER COLLECTIONS
+                            </p>
+                            <div
+                                class="flex flex-col mt-1 mb-3 font-barlow font-semibold text-[23px] leading-[44px] tracking-tight">
+                                <a href="#" class="w-max">COLD BREW</a>
+                                <a href="#" class="w-max">ESPRESSO</a>
+                                <a href="#" class="w-max">TASTING CUPS</a>
+                                <a href="#" class="w-max">ACCESSORIES</a>
+                            </div>
+                            <button
+                                class="w-max text-xs font-josefin font-bold px-7 pt-3 pb-[11px] tracking-widest border border-[#221F20] rounded-3xl">
+                                SHOP ALL
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-1">
+                    <div class="flex h-full justify-center items-center">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="121" height="28" viewBox="0 0 121 28">
+                                <g id="ESPRO_Logo" data-name="ESPRO Logo" transform="translate(-132.052 -143.893)">
+                                    <path id="Path_2" data-name="Path 2"
+                                        d="M149.092,145.5h-16.35a.649.649,0,0,0-.69.722v25.428a.65.65,0,0,0,.69.724h16.35a.649.649,0,0,0,.688-.724v-1.869a.649.649,0,0,0-.688-.724h-13.3V160.41h10.933a.648.648,0,0,0,.688-.721v-1.871a.649.649,0,0,0-.688-.724H135.794v-8.275h13.3a.649.649,0,0,0,.688-.723v-1.871A.649.649,0,0,0,149.092,145.5Z"
+                                        transform="translate(0 -1.046)" fill="#221f20" />
+                                    <path id="Path_3" data-name="Path 3"
+                                        d="M205.436,157.187l-5.911-1.87c-2.827-.909-3.981-2.113-3.981-4.155,0-2.438,2.132-3.953,5.563-3.953,3.329,0,5.549,1.53,6.422,4.427a.75.75,0,0,0,.741.623H210.4a.672.672,0,0,0,.528-.221.765.765,0,0,0,.154-.643c-.913-4.767-4.548-7.5-9.973-7.5-5.565,0-9.3,3-9.3,7.455,0,3.592,1.958,5.964,5.987,7.253l5.916,1.871h0c2.762.873,3.94,2.115,3.94,4.154,0,2.474-2.206,3.951-5.9,3.951s-6.009-1.489-6.892-4.424a.746.746,0,0,0-.742-.624h-2.128a.67.67,0,0,0-.524.219.769.769,0,0,0-.158.642c.926,4.838,4.635,7.5,10.444,7.5,5.857,0,9.641-2.926,9.641-7.454C211.387,160.869,209.385,158.429,205.436,157.187Z"
+                                        transform="translate(-38.596)" fill="#221f20" />
+                                    <path id="Path_4" data-name="Path 4"
+                                        d="M273.492,145.5h-9.8a.649.649,0,0,0-.688.722v25.428a.649.649,0,0,0,.688.724h2.365a.649.649,0,0,0,.688-.724v-7.878h6.745c5.891,0,9.136-3.244,9.136-9.135S279.383,145.5,273.492,145.5Zm0,14.957h-6.745V148.819h6.745c3.478,0,5.394,2.067,5.394,5.821S276.97,160.46,273.492,160.46Z"
+                                        transform="translate(-85.317 -1.046)" fill="#221f20" />
+                                    <path id="Path_5" data-name="Path 5"
+                                        d="M412.25,143.9a14,14,0,1,0,14.051,14A14.041,14.041,0,0,0,412.25,143.9Zm0,24.358a10.359,10.359,0,1,1,10.4-10.359A10.389,10.389,0,0,1,412.25,168.253Z"
+                                        transform="translate(-173.433 -0.001)" fill="#221f20" />
+                                    <path id="Path_6" data-name="Path 6"
+                                        d="M349.549,164.563c-.363-.628-1.372-2.357-2.085-3.53a7.4,7.4,0,0,0,5.172-7.144c0-5.251-3.415-8.386-9.134-8.386h-9.457a.65.65,0,0,0-.691.722v25.428a.651.651,0,0,0,.691.724h2.362a.649.649,0,0,0,.688-.724V162.28h6.686l1.617,2.633,4.056,6.919a.947.947,0,0,0,.805.545h2.771a.662.662,0,0,0,.634-.3.646.646,0,0,0-.062-.679Zm-.653-10.674c0,3.178-2.016,5.075-5.394,5.075h-6.407V148.817H343.5C346.879,148.817,348.9,150.713,348.9,153.889Z"
+                                        transform="translate(-131.152 -1.046)" fill="#221f20" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex-1 font-josefin text-xs">
+                    <div class="flex h-full justify-end items-center gap-14 text-[#221F20]">
+                        <a href="#" class="text-[13px] font-josefin font-bold tracking-widest">BREW GUIDES</a>
+                        <a href="#" class="text-[13px] font-josefin font-bold tracking-widest">BLOG</a>
+                        <div class="flex items-center gap-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+                                <g id="search-line" transform="translate(-3.33 -3)">
+                                    <path id="Path_7" data-name="Path 7"
+                                        d="M11.046,4.217a6.5,6.5,0,1,1-6.494,6.5,6.5,6.5,0,0,1,6.494-6.5m0-1.217a7.716,7.716,0,1,0,7.716,7.716A7.716,7.716,0,0,0,11.046,3Z"
+                                        fill="#221f20" />
+                                    <path id="Path_8" data-name="Path 8"
+                                        d="M31.428,30.274l-4.375-4.4-.843.837,4.375,4.4a.594.594,0,0,0,.843-.837Z"
+                                        transform="translate(-9.27 -9.287)" fill="#221f20" />
+                                </g>
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19">
+                                <g id="My_Account_icon" data-name="My Account icon"
+                                    transform="translate(-192.935 -176.9)">
+                                    <circle id="Ellipse_2" data-name="Ellipse 2" cx="4.672" cy="4.672" r="4.672"
+                                        transform="translate(196.549 177.4)" fill="none" stroke="#221f20"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                    <path id="Path_12" data-name="Path 12"
+                                        d="M209.676,274.881a8.052,8.052,0,0,0-16.076,0Z"
+                                        transform="translate(-0.165 -78.481)" fill="none" stroke="#221f20"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                </g>
+                            </svg>
+
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24">
+                                    <g id="Shopping_bag_icon" data-name="Shopping bag icon"
+                                        transform="translate(-2609.057 -2828.352)">
+                                        <path id="Path_13" data-name="Path 13"
+                                            d="M2628.791,2909.263h-3.5a.394.394,0,1,0,0,.788h3.107v16.8h-18.419v-16.8h3.192a.394.394,0,1,0,0-.788h-3.59a.4.4,0,0,0-.4.394v17.584a.4.4,0,0,0,.4.394h19.208a.4.4,0,0,0,.4-.394h0v-17.584A.4.4,0,0,0,2628.791,2909.263Z"
+                                            transform="translate(0 -75.158)" fill="#221f20" stroke="#221f20"
+                                            stroke-width="0.25" />
+                                        <path id="Path_14" data-name="Path 14"
+                                            d="M2721.271,2909.386a.4.4,0,0,0,.4.395h3.493a.395.395,0,1,0,0-.79h-3.493A.4.4,0,0,0,2721.271,2909.386Z"
+                                            transform="translate(-104.219 -74.896)" fill="#221f20" stroke="#221f20"
+                                            stroke-width="0.25" />
+                                        <path id="Path_15" data-name="Path 15"
+                                            d="M2694.554,2828.477a4.3,4.3,0,0,0-4.3,4.3l-.027,4.544a.393.393,0,0,0,.393.393.388.388,0,0,0,.388-.393l.027-4.544a3.515,3.515,0,1,1,7.03,0l-.028,4.544a.393.393,0,1,0,.785,0l.028-4.544A4.3,4.3,0,0,0,2694.554,2828.477Z"
+                                            transform="translate(-75.34)" fill="#221f20" stroke="#221f20"
+                                            stroke-width="0.25" />
+                                    </g>
+                                </svg>
+
+                                <div
+                                    class="flex w-6 h-6 bg-[#659AB1] bg-opacity-30 rounded-full justify-center items-center">
+                                    <p class="font-barlow w-[6px]">0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="relative">
+            <div class="flex bg-cover h-[85vh] justify-center items-center"
+                style="background-image: url('./images/section1 img1.png');">
+                <div class="flex flex-col items-center text-white">
+                    <p class="text-[70px] font-barlow font-bold">BREW ANYWHERE. BE ANYWHERE.</p>
+                    <p class="max-w-[770px] mt-2 mb-6 text-center text-[17px] font-normal font-nunito">Lorem ipsum dolor
+                        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo.</p>
+                    <div class="flex items-center h-16">
+                        <button
+                            class="text-xs font-josefin font-bold tracking-widest px-9 pt-4 pb-[15px] bg-white text-[#221F20] rounded-3xl hover:px-[38px] hover:pt-[17px] hover:pb-[16px] transition-all duration-300">POUR
+                            ON THE GO</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
+                <a href="#section-2" class="flex items-center gap-2">
+                    <p class="text-white text-sm font-josefin font-bold tracking-widest">EXPLORE</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 10 15"
+                        class="bouncing-svg">
+                        <g id="arrow-right-short" transform="translate(10) rotate(90)">
+                            <path id="Path_22" data-name="Path 22"
+                                d="M18.2,10.333a.643.643,0,0,1,.95,0l4.027,4.285a.747.747,0,0,1,0,1.011l-4.027,4.285a.644.644,0,0,1-.95,0,.748.748,0,0,1,0-1.011l3.553-3.779L18.2,11.344a.747.747,0,0,1,0-1.011Z"
+                                transform="translate(-11.943 -10.123)" fill="#fff" fill-rule="evenodd" />
+                            <path id="Path_23" data-name="Path 23"
+                                d="M9,17.546a.7.7,0,0,1,.717-.671h9.321a.673.673,0,1,1,0,1.342H9.717A.7.7,0,0,1,9,17.546Z"
+                                transform="translate(-9 -12.546)" fill="#fff" fill-rule="evenodd" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section id="section-2" class="flex flex-col gap-8 h-[100vh] justify-center items-center w-full">
+            <div class="flex flex-col items-center text-[#221F20]">
+                <p class="font-josefin font-bold text-xs tracking-wider">POUR YOUR BEST CUP WITH</p>
+                <p class="font-barlow font-bold text-[40px]">OUR BEST SELLERS</p>
+            </div>
+
+            <div class="flex w-full h-[500px] relative">
+                <div id="scrollContainer" class="flex w-full items-center overflow-x-auto gap-10 px-32"
+                    style="overflow: hidden;">
+                    <!-- this needs to scroll horizontally -->
+                    <div
+                        class="flex flex-col flex-shrink-0 w-80 h-[458px] transform hover:-translate-y-3 transition-transform duration-300">
+                        <div class="flex justify-center items-end bg-[#F6F6F6] w-full min-h-[295px]">
+                            <img src="./images/slide-img1.png" alt="image" class="w-[240px] h-[228px] mb-4">
+                        </div>
+                        <div class="flex flex-col h-full justify-between mx-4 my-4">
+                            <div>
+                                <div class="flex gap-[2px] mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                </div>
+
+                                <p class="text-sm font-josefin font-bold text-[#221F20]">ESPRO COFFEE FRENCH PRESS P7
+                                </p>
+                            </div>
+
+                            <div class="flex flex-col gap-3">
+                                <span class="text-[15px] font-nunito ">$109.95 - $139.95</span>
+                                <div class="flex items-center gap-2">
+                                    <button
+                                        class="relative bg-[#CACCCE] outline outline-[#221F20] outline-1 outline-offset-2 w-[18px] h-[18px] rounded-full"></button>
+                                    <button
+                                        class="relative bg-white border border-[#DEDEDE] w-[22px] h-[22px] rounded-full"></button>
+                                    <button class="relative bg-[#676B6D] w-[22px] h-[22px] rounded-full"></button>
+                                    <button class="relative bg-[#221F20] w-[22px] h-[22px] rounded-full"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col flex-shrink-0 w-80 h-[458px] transform hover:-translate-y-3 transition-transform duration-300">
+                        <div class="flex justify-center items-end bg-[#F6F6F6] w-full min-h-[295px] relative">
+                            <div
+                                class="absolute flex justify-center items-center top-[13px] left-2 min-w-[50px] h-[26px] bg-[#F24343] px-[10px] -rotate-90">
+                                <span
+                                    class="text-white text-[11px] tracking-wider font-nunito font-extrabold">SALE</span>
+                            </div>
+                            <img src="./images/slide-img2.png" alt="image" class="w-[240px] h-[228px] mb-4">
+                        </div>
+                        <div class="flex flex-col h-full justify-between mx-4 my-4">
+                            <div>
+                                <div class="flex gap-[2px] mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#EAEAEA" />
+                                    </svg>
+                                </div>
+
+                                <p class="text-sm font-josefin font-bold text-[#221F20]">ESPRO COFFEE FRENCH PRESS P6
+                                </p>
+                            </div>
+
+                            <div class="flex flex-col gap-3">
+                                <span class="text-[15px] font-nunito ">$89.95 <span
+                                        class="ml-2 text-[#CACCCE] line-through">$99.95</span></span>
+                                <div class="flex items-center gap-2">
+                                    <button
+                                        class="relative bg-[#221F20] outline outline-[#221F20] outline-1 outline-offset-2 w-[18px] h-[18px] rounded-full"></button>
+                                    <button class="relative bg-[#676B6D] w-[22px] h-[22px] rounded-full"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col flex-shrink-0 w-80 h-[458px] transform hover:-translate-y-3 transition-transform duration-300">
+                        <div class="flex justify-center items-end bg-[#F6F6F6] w-full min-h-[295px] relative">
+                            <div
+                                class="absolute flex justify-center items-center top-[14px] left-2 min-w-[50px] h-[26px] bg-[#6BBBAE] px-[10px] -rotate-90">
+                                <span
+                                    class="text-white text-[11px] tracking-wider font-nunito font-extrabold">NEW!</span>
+                            </div>
+                            <img src="./images/img3 dropdown.png" alt="image" class="w-[200px] h-[228px] mb-4">
+                        </div>
+                        <div class="flex flex-col h-full mx-4 my-4">
+                            <div>
+                                <div class="flex gap-[2px] mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                </div>
+
+                                <p class="text-sm font-josefin font-bold text-[#221F20]">BLOOM POUR OVER COFFEE BREWING
+                                    KIT, 18 OZ</p>
+                            </div>
+
+                            <span class="text-[15px] font-nunito mt-4">$99.95</span>
+
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col flex-shrink-0 w-80 h-[458px] transform hover:-translate-y-3 transition-transform duration-300">
+                        <div class="flex justify-center items-end bg-[#F6F6F6] w-full min-h-[295px] relative">
+                            <div
+                                class="absolute flex justify-center items-center top-11 -left-5 min-w-[50px] h-[26px] bg-[#8DB9CA] px-[10px] -rotate-90">
+                                <span class="text-white text-[11px] tracking-wider font-nunito font-extrabold">BACK IN
+                                    STOCK</span>
+                            </div>
+                            <img src="./images/slide-img4.png" alt="image" class="w-[240px] h-[228px] mb-4">
+                        </div>
+                        <div class="flex flex-col h-full justify-between mx-4 my-4">
+                            <div>
+                                <div class="flex gap-[2px] mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                </div>
+
+                                <p class="text-sm font-josefin font-bold text-[#221F20]">ESPRO COFFEE FRENCH PRESS P6
+                                </p>
+                            </div>
+
+                            <div class="flex flex-col gap-3">
+                                <span class="text-[15px] font-nunito ">$89.95 <span
+                                        class="ml-2 text-[#CACCCE] line-through">$99.95</span></span>
+                                <div class="flex items-center gap-2">
+                                    <button
+                                        class="relative bg-[#221F20] outline outline-[#221F20] outline-1 outline-offset-2 w-[18px] h-[18px] rounded-full"></button>
+                                    <button
+                                        class="relative bg-white border border-[#DEDEDE] w-[22px] h-[22px] rounded-full"></button>
+                                    <button class="relative bg-[#676B6D] w-[22px] h-[22px] rounded-full"></button>
+                                    <button class="relative bg-black w-[22px] h-[22px] rounded-full"></button>
+                                    <button class="relative bg-[#285C4D] w-[22px] h-[22px] rounded-full"></button>
+                                    <button class="relative bg-[#02205C] w-[22px] h-[22px] rounded-full"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col flex-shrink-0 w-80 h-[458px] transform hover:-translate-y-3 transition-transform duration-300">
+                        <div class="flex justify-center items-end bg-[#F6F6F6] w-full min-h-[295px]">
+
+                            <img src="./images/slide-img2.png" alt="image" class="w-[240px] h-[228px] mb-4">
+                        </div>
+                        <div class="flex flex-col h-full justify-between mx-4 my-4">
+                            <div>
+                                <div class="flex gap-[2px] mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <path id="Path_223" data-name="Path 223"
+                                            d="M3.388,15.07a.5.5,0,0,1-.7-.553L3.466,10.1.164,6.971a.518.518,0,0,1,.265-.886l4.592-.65L7.068,1.4a.482.482,0,0,1,.869,0L9.985,5.435l4.592.65a.518.518,0,0,1,.265.886l-3.3,3.132.778,4.415a.5.5,0,0,1-.7.553L7.5,12.965,3.387,15.07Z"
+                                            transform="translate(-0.003 -1.123)" fill="#f0d563" />
+                                    </svg>
+                                </div>
+
+                                <p class="text-sm font-josefin font-bold text-[#221F20]">ESPRO COFFEE FRENCH PRESS P6
+                                </p>
+                            </div>
+
+                            <div class="flex flex-col gap-3">
+                                <span class="text-[15px] font-nunito ">$89.95 <span
+                                        class="ml-2 text-[#CACCCE] line-through">$99.95</span></span>
+                                <div class="flex items-center gap-2">
+                                    <button
+                                        class="relative bg-[#221F20] outline outline-[#221F20] outline-1 outline-offset-2 w-[18px] h-[18px] rounded-full"></button>
+                                    <button class="relative bg-[#676B6D] w-[22px] h-[22px] rounded-full"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button id="slideRight"
+                    class="flex justify-center items-center absolute h-[46px] w-[46px] right-[88px] top-2/4 bg-white rounded-full transform -translate-y-1/2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class=" -rotate-90">
+                        <g stroke="null" transform="matrix(0 1.34992 -1.50001 0 7.97972 -15.9286)" id="svg_1">
+                            <path stroke="null" fill-rule="evenodd" fill="#000000"
+                                transform="translate(-11.943 -10.123)"
+                                d="m30.58075,4.65256a0.643,0.643 0 0 1 0.95,0l4.027,4.285a0.747,0.747 0 0 1 0,1.011l-4.027,4.285a0.644,0.644 0 0 1 -0.95,0a0.748,0.748 0 0 1 0,-1.011l3.553,-3.779l-3.553,-3.78a0.747,0.747 0 0 1 0,-1.011z"
+                                data-name="Path 22" id="svg_3" />
+                            <path stroke="null" fill-rule="evenodd" fill="#000000" transform="translate(-9 -12.546)"
+                                d="m21.38075,11.86556a0.7,0.7 0 0 1 0.717,-0.671l9.321,0a0.673,0.673 0 1 1 0,1.342l-9.321,0a0.7,0.7 0 0 1 -0.717,-0.671z"
+                                data-name="Path 23" id="svg_2" />
+                        </g>
+                    </svg>
+                </button>
+
+                <button id="slideBack"
+                    class="absolute hidden justify-center items-center h-[46px] w-[46px] left-[88px] top-2/4 bg-white rounded-full -translate-y-1/2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="rotate-90">
+                        <g stroke="null" transform="matrix(0 1.34992 -1.50001 0 7.97972 -15.9286)" id="svg_1">
+                            <path stroke="null" fill-rule="evenodd" fill="#000000"
+                                transform="translate(-11.943 -10.123)"
+                                d="m30.58075,4.65256a0.643,0.643 0 0 1 0.95,0l4.027,4.285a0.747,0.747 0 0 1 0,1.011l-4.027,4.285a0.644,0.644 0 0 1 -0.95,0a0.748,0.748 0 0 1 0,-1.011l3.553,-3.779l-3.553,-3.78a0.747,0.747 0 0 1 0,-1.011z"
+                                data-name="Path 22" id="svg_3" />
+                            <path stroke="null" fill-rule="evenodd" fill="#000000" transform="translate(-9 -12.546)"
+                                d="m21.38075,11.86556a0.7,0.7 0 0 1 0.717,-0.671l9.321,0a0.673,0.673 0 1 1 0,1.342l-9.321,0a0.7,0.7 0 0 1 -0.717,-0.671z"
+                                data-name="Path 23" id="svg_2" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
+        </section>
+
+
+        <section class="grid bg-[#F3F7F9] min-h-[850px] h-full w-full grid-rows-2 p-28 relative">
+            <div class="grid grid-cols-3">
+
+                <div class="flex items-end">
+                    <img src="./images/section3-img1.png" alt="image" class="translate-y-10">
+                </div>
+
+
+                <div class="flex justify-center items-center w-full">
+                    <div class="flex flex-col justify-center items-center w-full h-full max-w-[390px] -translate-y-10">
+                        <p class="text-xs text-[#221F20] tracking-widest font-josefin font-bold mb-1">DESIGNED FOR REAL
+                            LIFE</p>
+                        <p class="text-center text-5xl leading-[52px] text-[#221F20] font-barlow font-bold">COFFEE MADE
+                            FOR YOUR LIFE ON THE GO.</p>
+                        <p class="text-center text-base text-[#221F20] font-nunito font-normal mt-3">We understand
+                            coffee is a big part of your busy, active life. That’s why we create and develop products
+                            that allow you to bring your passion for <span class="font-bold">coffee-when you want
+                                it-</span> and wherever life takes you.</p>
+
+                        <div id="dots" class="flex flex-col text-[#659AB1] rotate-90 translate-x-4 translate-y-[350px]">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" height="2" width="657" class="translate-y-[23px]">
+                                <line x1="1" y1="1" x2="657" y2="1" stroke="black" stroke-width="2" />
+                              </svg> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-end h-full ml-10 z-10 relative">
+                    <img src="./images/section3-img5.png" alt="image" class="translate-y-10 ">
+
+                    <img src="./images/section3-img6.png" alt="image" class="absolute top-0 right-4">
+                </div>
+
+            </div>
+
+            <div class="flex items-end w-full justify-between">
+                <div class="flex items-end relative h-full w-full max-w-[630px]">
+                    <img src="./images/section3-img2.png" alt="image" class="translate-y-8">
+
+                    <img src="./images/section3-img3.png" alt="image" class="absolute top-0 right-2">
+                </div>
+
+                <img src="./images/section3-img4.png" alt="image" class="mr-28">
+            </div>
+        </section>
+
+
+        <section class="flex justify-center items-center min-h-[800px] p-28">
+            <div class="flex flex-col justify-center gap-6">
+                <p class="flex justify-center text-[40px] text-[#221F20] font-barlow font-bold tracking-wide">EXPLORE
+                    OUR PRODUCTS</p>
+                <div class="flex gap-8">
+                    <div id="s4card" class="flex relative max-w-[410px] h-[515px]">
+                        <div class="absolute w-full h-full p-8 z-20">
+                            <div class="w-full h-full">
+                                <p class="text-[22px] text-white font-josefin font-bold">FRENCH PRESS</p>
+                                <div class="flex justify-center items-center w-36 h-14">
+                                    <button id="s4cardbtn"
+                                        class="hidden bg-[#e2edf2] px-8 pt-4 pb-[15px] rounded-3xl text-[#221F20] text-xs font-josefin font-bold hover:bg-white hover:px-[34px] hover:pt-[17px] hover:pb-[16px] transition-all duration-300"">SHOP NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                        <img src=" ./images/section4-card1-img1.png" alt="image" class=" cover">
+                                        <img src="./images/section4-card1-img2.png" alt="image" id="img2"
+                                            class="hidden absolute top-0 left-0 bg-[#8db9ca] z-10">
+                                </div>
+
+                                <div id="s4card" class="flex relative max-w-[410px] h-[515px]">
+                                    <div class="absolute w-full h-full p-8 z-20">
+                                        <div class="w-full h-full">
+                                            <p class="text-[22px] text-white font-josefin font-bold">POUR OVER</p>
+                                            <div class="flex justify-center items-center w-36 h-14">
+                                                <button id="s4cardbtn"
+                                                    class="hidden bg-[#e2edf2] px-8 pt-4 pb-[15px] rounded-3xl text-[#221F20] text-xs font-josefin font-bold hover:bg-white hover:px-[34px] hover:pt-[17px] hover:pb-[16px] transition-all duration-300"">SHOP NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                        <img src=" ./images/section4-card2-img1.png" alt="image" class=" cover">
+                                                    <img src="./images/section4-card2-img2.png" alt="image" id="img2"
+                                                        class="hidden absolute top-0 left-0 bg-[#7fa9ae] w-full h-full z-10">
+                                            </div>
+
+                                            <div id="s4card" class="flex relative max-w-[410px] h-[515px]">
+                                                <div class="absolute w-full h-full p-8 z-20">
+                                                    <div class="w-full h-full">
+                                                        <p class="text-[22px] text-white font-josefin font-bold">COLD
+                                                            BREW</p>
+                                                        <div class="flex justify-center items-center w-36 h-14">
+                                                            <button id="s4cardbtn"
+                                                                class="hidden bg-[#e2edf2] px-8 pt-4 pb-[15px] rounded-3xl text-[#221F20] text-xs font-josefin font-bold hover:bg-white hover:px-[34px] hover:pt-[17px] hover:pb-[16px] transition-all duration-300">SHOP
+                                                                NOW</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img src="./images/section4-card3-img1.png" alt="image" class=" cover">
+                                                <img src="./images/section4-card3-img2.png" alt="image" id="img2"
+                                                    class="hidden absolute top-0 left-0 bg-[#9099ba] w-full h-full z-10">
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-center items-center mt-8 h-14">
+                                            <button
+                                                class="text-xs text-[#221F20] font-josefin font-bold border border-[#221F20] rounded-3xl px-6 pt-4 pb-[15px] hover:px-[26px] hover:pt-[17px] hover:pb-[16px] transition-all duration-300">SHOP
+                                                ALL PRODUCTS</button>
+                                        </div>
+                                    </div>
+        </section>
+
+
+        <section class="flex flex-1 h-[700px]">
+            <div id="s5box" class="flex relative w-max h-max basis-2/4">
+                <div class="grid grid-rows-2 w-full h-full absolute justify-center">
+                    <div class="flex flex-col justify-end gap-4 max-w-[580px] text-white mb-16">
+                        <p class="text-center text-5xl font-barlow font-bold">MAKE EVERY CUP AN EXPERIENCE.</p>
+                        <p class="text-center text-base font-nunito font-normal">Have your French pressed coffee
+                            anywhere with ESPRO’s Travel Press. A double micro-filter eliminates grit for your smoothest
+                            cup on the go, and the mug fits right in a car cup holder or bike’s water bottle cage.</p>
+                    </div>
+
+                    <div class="flex justify-center items-center h-16 -translate-y-8">
+                        <button
+                            class="text-xs font-josefin font-bold border bg-white rounded-3xl px-6 pt-4 pb-[15px] hover:px-[26px] hover:pt-[17px] hover:pb-[16px] transition-all duration-300">SHOP
+                            ALL PRODUCTS</button>
+                    </div>
+                </div>
+                <img src="./images/section5-img1.png" alt="image" class="w-full h-[700px]">
+            </div>
+
+            <div class="flex flex-col justify-end items-center flex-1 bg-[#8DB9CA]">
+                <div id="s5box2" class="w-[440px] h-[440px] z-20">
+                    <img src="./images/section5-img2.png" alt="image">
+                    <img src="./images/section5-img1.png" alt="image" class="hidden w-full h-full">
+                    <img src="./images/section9-img2.png" alt="image" class="hidden w-full h-full">
+                    <img src="./images/section3-img4.png" alt="image" class="hidden w-full h-full">
+                    <img src="./images/section9-img6.png" alt="image" class="hidden w-full h-full">
+                </div>
+
+                <p class="text-[84px] text-[#AACBD8] text-nowrap font-barlow font-bold">PRESS. SIP. ENJOY.</p>
+            </div>
+        </section>
+
+        <section class="flex flex-col justify-center items-center w-full h-[470px] p-28 pb-20 gap-28">
+            <div class="flex flex-col gap-8 w-full max-w-[850px]">
+                <p class="text-[#221F20] text-xs font-josefin font-bold text-center">IN THE PRESS</p>
+                <p class="text-[#221F20] text-[22px] font-nunito font-normal text-center">“The result is a richly
+                    flavored, super aromatic cup of coffee without the usual silt in the bottom. The press isn’t just
+                    for coffee, either—there’s also a tea filter available that isolates tea leaves to prevent
+                    oversteeping.”</p>
+            </div>
+
+            <div class="flex justify-center items-center gap-28">
+                <img src="./images/past-logo.png" alt="image" class="w-[138px] h-[38px]">
+                <img src="./images/homegrounds-logo.png" alt="image" class="w-[211px] h-[46px]">
+                <img src="./images/martha-stewart-logo.png" alt="image" class="w-32 h-[58px]">
+                <img src="./images/buzzfeed-logo.png" alt="image" class="w-[170px] h-[58px]">
+                <img src="./images/fast-logo.png" alt="image" class="w-[158px] h-[67px]">
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-8 w-full h-[918px] bg-[#EFF5F7] overflow-hidden">
+            <div class="flex flex-nowrap h-32 gap-8">
+                <span
+                    class="text-[#D8E6EB] text-[105px] font-barlow font-bold tracking-widest text-nowrap -translate-x-3">FRESH
+                    GROUNDS. 01</span>
+                <span class="text-[#D8E6EB] text-[105px] font-barlow font-bold tracking-widest text-nowrap">FRESH
+                    GROUNDS. 01</span>
+            </div>
+
+            <div class="relative w-[1290px] h-[680px] mx-auto">
+                <div class="flex flex-col items-center justify-center absolute w-full h-full text-white">
+                    <div class="flex flex-col items-center justify-center max-w-96 gap-2">
+                        <p class="text-xs font-josefin font-light tracking-widest">EPISODE 01: <span
+                                class="font-bold">THE GREAT MIGRATION</span></p>
+                        <p class=" text-5xl font-barlow font-bold">FRESH GROUNDS</p>
+                        <p class="text-[15px] font-nunito font-normal text-center">Lorem ipsum dolor sit amet,
+                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+                    </div>
+
+                    <div class="flex justify-center items-center mt-8 h-14 z-10">
+                        <button
+                            class="flex gap-2 text-xs text-white font-josefin font-bold border border-white rounded-3xl px-6 pt-4 pb-[15px] hover:px-[26px] hover:pt-[17px] hover:pb-[16px] transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="12.99" viewBox="0 0 9 12.99">
+                                <g id="play-button" transform="translate(-13.5 -12)">
+                                    <path id="Path_191" data-name="Path 191" d="M22.5,18.5l-9,6.5V12l9,6.495Z"
+                                        fill="#fff" />
+                                </g>
+                            </svg>
+                            WATCH FILM
+                        </button>
+                    </div>
+                </div>
+                <!-- <img src="./images/vid-img1.png" alt="video image" class=" rounded-lg"> -->
+                <video src="./images/ESPRO-cut2.mp4" autoplay loop muted playsinline></video>
+            </div>
+        </section>
+
+
+        <section class="grid grid-cols-2 w-full h-[755px] p-28">
+            <div class="flex w-full h-full items-center">
+                <div class="flex flex-col justify-center items-start w-full max-w-[520px] text-[#221F20] gap-2">
+                    <p class="text-xs font-josefin font-bold tracking-wider">THE ULTIMATE BREW GUIDES</p>
+                    <p class="text-[40px] leading-[48px] font-barlow font-bold">COFFEE TO WATER RATIOS: HOW TO MEASURE
+                        COFFEE LIKE A PRO</p>
+                    <p class="text-base font-nunito font-normal pt-6"><span class="font-bold">You can taste it when
+                            you’ve brewed with the perfect coffee to water ratio.</span> The acidity pops every so
+                        slightly, enhancing the rich flavors and aromas. Your coffee’s mouthfeel is smooth and
+                        satisfying. And the flavor is just strong enough that you can sense all its nuances across your
+                        10,000 taste buds, but not so strong that it’s uncomfortable. 
+                    </p>
+                    
+                    <p class="mt-6">It’s an incredible experience—and too often, a hard one to come by.</p>
+
+                    <div class="flex justify-center items-center h-16 mt-6">
+                        <button
+                        class="flex gap-2 text-xs text-[#221F20] font-josefin font-bold border border-[#221F20] rounded-3xl px-6 pt-4 pb-[15px] hover:px-[26px] hover:pt-[17px] hover:pb-[16px] transition-all duration-300">
+                        LEARN MORE
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex w-full h-full items-center -translate-x-10 relative">
+                <div id="s8img" class="flex relative items-center w-[630px] h-[500px]">
+                    <img id="s8img2" src="./images/section8-img2.png" alt=""
+                        class="absolute -top-[74px] -right-[74px] animate-spin z-20">
+                    <img src="./images/section8-img.png" alt="" class="w-full h-full z-10">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="flex flex-col w-full h-[578px] bg-[#EFF5F7]">
+            <div class="flex justify-between items-center px-28 pt-20 flex-[1]">
+                <div class="text-[#221F20] w-[365px]">
+                    <p class="text-4xl font-barlow font-bold">SHOW US YOUR BEST POUR.</p>
+                    <p class="text-[15px] font-nunito font-normal text-left whitespace-pre-line">Making coffee better —
+                        one cup at a time.
+                        Share your best ☕ moments with us <span class="font-bold">#ESPRO</span></p>
+                </div>
+
+                <button
+                    class="flex gap-2 text-xs text-[#221F20] font-josefin font-bold border border-[#221F20] rounded-3xl px-6 pt-4 pb-[15px] hover:px-[26px] hover:pt-[17px] hover:pb-[16px] transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18.001" viewBox="0 0 18 18.001">
+                        <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram"
+                            d="M9,6.623a4.615,4.615,0,1,0,4.614,4.615A4.607,4.607,0,0,0,9,6.623Zm0,7.616a3,3,0,1,1,3-3,3.006,3.006,0,0,1-3,3Zm5.879-7.8A1.076,1.076,0,1,1,13.8,5.358,1.074,1.074,0,0,1,14.876,6.434Zm3.056,1.093a5.328,5.328,0,0,0-1.454-3.772A5.36,5.36,0,0,0,12.707,2.3c-1.486-.084-5.939-.084-7.425,0a5.352,5.352,0,0,0-3.771,1.45A5.346,5.346,0,0,0,.058,7.523c-.084,1.486-.084,5.941,0,7.427a5.328,5.328,0,0,0,1.454,3.772,5.367,5.367,0,0,0,3.771,1.454c1.486.084,5.939.084,7.425,0a5.325,5.325,0,0,0,3.771-1.454,5.363,5.363,0,0,0,1.454-3.772c.084-1.486.084-5.937,0-7.423Zm-1.919,9.018A3.037,3.037,0,0,1,14.3,18.256c-1.185.47-4,.362-5.3.362s-4.124.1-5.3-.362a3.037,3.037,0,0,1-1.711-1.711c-.47-1.185-.361-4-.361-5.306s-.1-4.125.361-5.306A3.037,3.037,0,0,1,3.692,4.221c1.185-.47,4-.362,5.3-.362s4.124-.1,5.3.362a3.037,3.037,0,0,1,1.711,1.711c.47,1.185.361,4,.361,5.306S16.482,15.364,16.012,16.545Z"
+                            transform="translate(0.005 -2.238)" fill="#221f20" />
+                    </svg>
+                    FOLLOW US ON INSTAGRAM
+                </button>
+            </div>
+
+            <div class="flex justify-center items-center gap-10 overflow-hidden flex-[3] pb-2">
+                <img src="./images/section9-img1.png" alt="" class="-translate-y-8">
+                <img src="./images/section9-img2.png" alt="">
+                <img src="./images/section9-img3.png" alt="" class="-translate-y-8">
+                <img src="./images/section9-img4.png" alt="">
+                <img src="./images/section9-img5.png" alt="" class="-translate-y-8">
+                <img src="./images/section9-img6.png" alt="">
+            </div>
+        </section>
+
+
+        <footer class="flex flex-col justify-between w-full h-[550px] bg-[#659AB1] p-28 pt-20 pb-4">
+            <div id="footer" class="flex items-center justify-between w-full relative">
+                <div class="max-w-[410px]">
+                    <p class="text-3xl text-white font-barlow font-bold tracking-wide">NEVER MISS A DROP.</p>
+                    <p class="text-lg text-[#EFF5F7] font-nunito font-normal">Sign up to be the first to know about
+                        exclusive new deals, product launches and more.</p>
+                </div>
+
+                <div class="flex w-[740px] h-[62px] bg-[#84AEC1] rounded-md">
+                    <input type="text" name="input" id="input"
+                        class="flex-[5] bg-transparent w-full h-full text-[17px] font-nunito font-normal">
+                    <div class="flex flex-[1] w-full h-full justify-center items-center">
+                        <a href="#"
+                            class="text-xs font-josefin font-bold tracking-wider text-white transform border-0 transition-transform hover:border-b-2">SIGN
+                            UP</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col gap-14">
+                <div class="flex ">
+                    <div class="flex flex-col gap-10 flex-[1]">
+                        <img src="./images/espro-logo-white.png" alt="" class="max-w-[268px]">
+                        <div class="flex flex-col gap-2 text-[15px] font-nunito font-normal text-white">
+                            <span class="font-bold">We’re here to help.</span>
+                            <span>service@espro.com</span>
+                            <span>1.844.377.7622</span>
+                        </div>
+                    </div>
+
+                    <div class="flex w-full h-full justify-around items-start flex-[3]">
+                        <div class="flex flex-col text-white text-sm font-nunito font-normal gap-2">
+                            <span class="font-josefin font-bold tracking-wide">LEARN</span>
+                            <a href="#">Blog</a>
+                            <a href="#">Our Story</a>
+                            <a href="#">Brew Guides</a>
+                            <a href="#">Retailers</a>
+                        </div>
+
+                        <div class="flex flex-col text-white text-sm font-nunito font-normal gap-2">
+                            <span class="font-josefin font-bold tracking-wide">SUPPORT</span>
+                            <a href="#">FAQ</a>
+                            <a href="#">Shipping & Returns</a>
+                            <a href="#">Our Guarantee</a>
+                        </div>
+
+                        <div class="flex flex-col text-white text-sm font-nunito font-normal gap-2">
+                            <span class="font-josefin font-bold tracking-wide">COMPANY</span>
+                            <a href="#">Contact</a>
+                            <a href="#">Join Us</a>
+                            <a href="#">Press</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col flex-[1] gap-2">
+                        <span class="text-white text-sm font-josefin font-bold tracking-wide">CONNECT WITH US</span>
+                        <div class="flex gap-2">
+                            <button class="flex justify-center items-center bg-[#84AEC1] w-10 h-10 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8.749" height="18"
+                                    viewBox="0 0 8.749 18">
+                                    <path id="facebook"
+                                        d="M2.234,18V9.554H0V6.513H2.234v-2.6C2.234,1.875,3.553,0,6.593,0a18.457,18.457,0,0,1,2.14.118l-.071,2.84s-.928-.009-1.941-.009c-1.1,0-1.272.5-1.272,1.343v2.22h3.3L8.6,9.554H5.449V18H2.234"
+                                        fill="#fff" />
+                                </svg>
+                            </button>
+
+                            <button class="flex justify-center items-center bg-[#84AEC1] w-10 h-10 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17.999"
+                                    viewBox="0 0 18 17.999">
+                                    <path id="instagram"
+                                        d="M12,3c-2.444,0-2.75.011-3.71.054A6.623,6.623,0,0,0,6.1,3.473,4.6,4.6,0,0,0,3.472,6.1a6.636,6.636,0,0,0-.419,2.184C3.01,9.249,3,9.555,3,12s.01,2.75.054,3.71a6.623,6.623,0,0,0,.419,2.184,4.6,4.6,0,0,0,2.633,2.633,6.636,6.636,0,0,0,2.184.419C9.25,20.989,9.556,21,12,21s2.75-.011,3.71-.054a6.623,6.623,0,0,0,2.184-.419,4.6,4.6,0,0,0,2.633-2.633,6.636,6.636,0,0,0,.419-2.184c.043-.96.054-1.267.054-3.71s-.011-2.75-.054-3.71A6.623,6.623,0,0,0,20.527,6.1a4.6,4.6,0,0,0-2.633-2.633,6.636,6.636,0,0,0-2.184-.419C14.75,3.011,14.444,3,12,3m0,1.622c2.4,0,2.687.009,3.636.052a5,5,0,0,1,1.672.31,2.979,2.979,0,0,1,1.708,1.708,4.994,4.994,0,0,1,.31,1.671c.043.95.052,1.233.052,3.637s-.009,2.687-.052,3.636a5.032,5.032,0,0,1-.31,1.672,2.979,2.979,0,0,1-1.708,1.708,4.994,4.994,0,0,1-1.671.31c-.949.043-1.233.052-3.637.052s-2.688-.009-3.636-.052a5.032,5.032,0,0,1-1.672-.31,2.979,2.979,0,0,1-1.708-1.708,4.963,4.963,0,0,1-.31-1.671c-.043-.95-.052-1.233-.052-3.637s.009-2.687.052-3.636a5,5,0,0,1,.31-1.672A2.979,2.979,0,0,1,6.692,4.983a4.963,4.963,0,0,1,1.671-.31C9.312,4.631,9.6,4.622,12,4.622M12,15a3,3,0,1,1,3-3,3,3,0,0,1-3,3m0-7.621A4.621,4.621,0,1,0,16.621,12,4.621,4.621,0,0,0,12,7.379M17.883,7.2a1.08,1.08,0,1,1-1.08-1.08,1.08,1.08,0,0,1,1.08,1.08"
+                                        transform="translate(-3 -3)" fill="#fff" fill-rule="evenodd" />
+                                </svg>
+                            </button>
+
+                            <button class="flex justify-center items-center bg-[#84AEC1] w-10 h-10 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15">
+                                    <path id="twitter"
+                                        d="M18,4.755a4.838,4.838,0,0,1-.672.963,4.962,4.962,0,0,1-1.214,1.024q.02.16.03.3a10.922,10.922,0,0,1-.772,4.184,11.017,11.017,0,0,1-4.385,5.448,11.528,11.528,0,0,1-6.863,1.254A7.88,7.88,0,0,1,0,16.333a7.684,7.684,0,0,0,5.5-1.585,3.788,3.788,0,0,1-3.491-2.589,2.348,2.348,0,0,0,.783.04,7.281,7.281,0,0,0,.883-.12,4.139,4.139,0,0,1-2.509-1.947A4.2,4.2,0,0,1,.743,8.286a3.526,3.526,0,0,0,1.665.5A4.3,4.3,0,0,1,.773,6.129a4.924,4.924,0,0,1,.451-2.4A12.612,12.612,0,0,0,5.509,6.941a8.875,8.875,0,0,0,3.361.7,4.492,4.492,0,0,1,.452-2.849,3.882,3.882,0,0,1,2.318-1.686A3.421,3.421,0,0,1,15.07,4.172a6.108,6.108,0,0,0,2.388-.883,3.623,3.623,0,0,1-1.645,2.127A10.434,10.434,0,0,0,18,4.754Z"
+                                        transform="translate(0 -2.999)" fill="#fff" />
+                                </svg>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center">
+                    <span class="text-[13px] text-[#EFF5F7] font-nunito font-normal">Copyright © 2021 Espro Inc.</span>
+
+                    <div class="flex gap-8 items-center text-[13px] text-[#EFF5F7] font-nunito font-normal">
+                        <a href="#">Terms & Privacy</a>
+                        <a href="#">Patents</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </main>
+
+    <script src="./src/app.js"></script>
+</body>
+
+</html>

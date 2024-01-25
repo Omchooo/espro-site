@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height:100%;
+} 
+
+@keyframes bounce {
+    /* 0%, 80%, 100% {
+      transform: translateY(0);
+    } */
+    30% {
+      transform: translateY(10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .bouncing-svg {
+    animation: bounce 3s infinite;
+    animation-delay: 2s;
+  }
+
+  .card {
+    flex-shrink: 0;
+  }
+
+  button#slideRight, button#slideBack {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 10px 0px;
+  }
+
+   
+  #dots::after {
+    content: "...........................";
+    letter-spacing: 20px;
+    white-space: nowrap;
+    font-size: 20px;
+    height: 2px;
+  }
+
+  #s8img::after {
+    content: '';
+    position: absolute;
+    background: #84AEC1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+
+  #s8img2 {
+    animation: spin 10s linear infinite;
+  }
+
+
+
+
+  @keyframes bounce {
+    /* 0%, 80%, 100% {
+        transform: translateY(0);
+      } */
+  
+    30% {
+      transform: translateY(10px);
+    }
+  
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .bouncing-svg {
+    animation: bounce 3s infinite;
+    animation-delay: 2s;
+  }
+
+  
+  #s4card:hover #img2{
+    display: block;
+  }
+  
+  #s4card:hover #s4cardbtn{
+    display: block;
+  }
+  
+  #s5box::after {
+    content: "...........................";
+    position: absolute;
+    top: 50%;
+    /* transform: translate(); */
+    transform: translate(250px, -20px);
+    right: 0;
+    color: white;
+    letter-spacing: 20px;
+    white-space: nowrap;
+    font-size: 20px;
+    height: 2px;
+  }
+  
+  #s8img::after {
+    content: '';
+    position: absolute;
+    background: #84AEC1;
+    width: 100%;
+    height: 100%;
+    top: 40px;
+    left: 40px;
+  }
+  
+  #s8img2 {
+    animation: spin 10s linear infinite;
+  }
+  
+  #footer::after {
+    content: "............................................................";
+    position: absolute;
+    bottom: -50px;
+    right: 50%;
+    transform: translate(50%, 0);
+    color: white;
+    letter-spacing: 20px;
+    white-space: nowrap;
+    font-size: 20px;
+    height: 2px;
+  }
