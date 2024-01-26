@@ -98,19 +98,24 @@ function nextImage() {
 
 setInterval(nextImage, 2000);
 
+//MODAL
+let video = document.getElementById("ytiframe");
+let modal = document.getElementById("myModal");
 
-//MODAL 
 function openModal() {
-    document.getElementById('myModal').style.display = 'flex';
-    document.body.classList.add('modal-open');
-  }
+  modal.style.display = "flex";
+  document.body.classList.add("modal-open");
+}
 
-  function closeModal() {
-    document.getElementById('myModal').style.display = 'none';
-    document.body.classList.remove('modal-open');
-  }
+function closeModal() {
+  modal.style.display = "none";
+  document.body.classList.remove("modal-open");
 
-  // Close modal if user clicks outside the modal content
+  let iframeSrc = video.src;
+  video.src = iframeSrc;
+}
+
+// Close modal if user clicks outside the modal content
 //   window.onclick = function(event) {
 //     var modal = document.getElementById('myModal');
 //     if (event.target === modal) {
