@@ -86,7 +86,7 @@ html, body {
   }
   
   #s5box::after {
-    content: "...........................";
+    content: ".........................";
     position: absolute;
     top: 50%;
     /* transform: translate(); */
@@ -124,4 +124,13 @@ html, body {
     white-space: nowrap;
     font-size: 20px;
     height: 2px;
+  }
+
+  
+
+/* Responsive YouTube video */
+
+
+  body.modal-open {
+    overflow: hidden;
   }
